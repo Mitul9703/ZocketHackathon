@@ -59,12 +59,12 @@ class RAGService {
                 })
                 .join('\n\n---\n\n');
 
-            console.log(`✅ RAG found ${data.results.length} relevant document(s)`);
+            console.log('RAG found ${data.results.length} relevant document(s)`);
             return context;
 
         } catch (error) {
-            console.error('❌ RAG service error:', error);
-            return ''; // Return empty context on error, don't break the conversation
+            console.error('RAG service error:', error);
+            return ''; 
         }
     }
 
