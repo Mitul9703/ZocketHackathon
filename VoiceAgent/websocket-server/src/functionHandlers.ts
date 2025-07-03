@@ -213,7 +213,7 @@ functions.push({
       });
 
       // Send to Slack
-      const response = await fetch('https://hooks.slack.com/services/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', {
+      const response = await fetch("SLACK-WEBHOOK", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
